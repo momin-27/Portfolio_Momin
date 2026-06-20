@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Momin Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Portfolio.momin</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<!--<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg.png);">
+	          	 <div class="overlay"></div>
+	          	</div>-->
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>MOMIN</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Mechanical Engineer  ',
+						'Research Enthusiast  ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 50); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 100);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+			            <h6>Seeking opportunities for graduate research in Materials Science, CFD, Hydrogen Energy and Aerospace-inspired mechanical fields.</h6>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<br>
+						<p><a href="#resume-section" class="btn btn-white btn-outline-white py-3 px-4">CSWA</a> <a href="#resume-section" class="btn btn-white btn-outline-white py-3 px-4">CSWP</a> <a href="#resume-section" class="btn btn-white btn-outline-white py-3 px-4">CSWPA</a>
+							</p>
+			            <p><a href="https://drive.google.com/file/d/1cYRbM3eR5ZD38VNYzZnxbRdK-yIAnoa2/view?usp=sharing" class="btn btn-primary py-3 px-4">Download Resume</a> 
+							<a href="mailto:mominulislam27127@gmail.com" class="btn btn-white btn-outline-white py-3 px-4">Email</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/about-pic1.png" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Md Mominul Islam</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Research</span></p>
+										<p><span class="title-s">Experience Level: </span> <span>Fresher</span></p>
+										<p><span class="title-s">Address: </span> <span>Chittagong, Bangladesh</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Soft Skills</p>
+									<span>SolidWorks</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>ANSYS</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>AutoCAD</span> <span class="pull-right">60%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Microsoft Word</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>Microsoft Excel</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>Microsoft Powerpoint</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>LaTeX</span> <span class="pull-right">60%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>I am a graduate in Mechanical Engineering with hands-on experience in thermodynamics, mechanics, fluid mechanics, aerodynamics,  CFD, FSI, CAD, materials and metallurgy and many more fields. I hold a professional Mechanical Design certification, CSWP with  strong skills in SolidWorks. I have interests in CFD, Advanced materials, material composites and aerodynamics. I had also participated  multiple times in national-level mathematics Olympiads where I earned advanced mathematical problem-solving knowledge.
+									</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Research Driven Mechanical Graduate</span></li>
+									<li class="d-flex"><span>Domain:</span> <span>Computational Fluid Dynamics(CFD), Fluid Structural Interaction(FSI), Finite Element Analysis(FEA), Materials Science, Aerodynamics, 3D Printing</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Bachelor of Science in Mechanical Engineering</span></li>
+									<li class="d-flex"><span>Language:</span> <span>Bengali, English</span></li>
+									<li class="d-flex"><span>Tools:</span> <span>SolidWorks, Ansys, MS Office</span></li>
+									<li class="d-flex"><span>Other Interests:</span> <span>Advanced Mathematics, Data Analysis, Machine Learning</span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<!--<p class="mb-4">
+									<span class="number" data-number="7">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>-->
+								<p><a href="https://www.linkedin.com/in/momin27/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>“Mechanical Engineer focused on Simulation, Design, and Research Innovation”
+			</p>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		<div class="row">
+			
+
+			<div class="col-md-6">
+
+				<div class="resume-wrap ftco-animate">
+					<span class="date">12/2025-01/2026</span>
+					<h2><a href="https://drive.google.com/file/d/1_LpNhA0tjiru9Q4l8pugbHhETZdz9a_5/view?usp=sharing">Industrial Trainee</a></h2>
+					<span class="position"><a href="https://drive.google.com/file/d/1_LpNhA0tjiru9Q4l8pugbHhETZdz9a_5/view?usp=sharing">Padma Oil PLC</a></span>
+					<p class="mt-4">The training was conducted as a partial fulfillment of a course in Department of Mechanical Engineering, CUET.
+						<ul>
+							<li>Gained practical knowledge of petroleum refining processes, lubricant production, storage systems, and industrial plant operations at Padma Oil PLC.</li>
+							<li>Learned about industrial safety procedures, maintenance practices, quality control, and process monitoring used in large-scale oil and energy industries.</li>
+							<li>Developed understanding of pumps, pipelines, heat exchangers, fluid handling systems, and the real-world application of mechanical engineering principles in industrial operations.</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="resume-wrap ftco-animate">
+					<span class="date">07/2022-12/2022</span>
+					<h2><a href="https://drive.google.com/file/d/1kmMGM8tqxoDJtHZpfLxPBrK1J7QdyF_P/view?usp=sharing">Math Expert</a></h2>
+					<span class="position"><a href="https://drive.google.com/file/d/1kmMGM8tqxoDJtHZpfLxPBrK1J7QdyF_P/view?usp=sharing">PhotoMath</a></span>
+					<p class="mt-4">Photomath is a globally recognized education platform where students scan and solve academic problems using expert-verified solutions. As part of the expert team, I contributed to delivering high-quality math content aligned with Photomath’s strict academic and formatting standards.
+						<ul>
+							<li>Solved mathematical problems in subjects such as algebra, calculus, and geometry, ensuring step-by-step clarity for students.</li>
+							<li>Created detailed solutions using LaTeX, following Photomath’s content guidelines, logical flow, and presentation structure.</li>
+							<li>Linked each mathematical step with appropriate formulas, theorems, and rules to promote conceptual understanding.</li>
+						</ul>
+					</p>
+				</div>
+
+			</div>
+		</div>
+
+		<!--<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2021-Present</span>
+						<h2>Senior Data Analyst</h2>
+						<span class="position">Merkle</span>
+						<p class="mt-4">Merkle, a leading CXM and media company with over 10K+ professionals globally. It's a part of Dentsu International. 
+							<ul>
+								<li>Analysed ad campaigns, clickstream, and customer surveys data, identified an increasing demand and launched a strategic product line.</li>
+								<li>Developed time series forecasting models to predict sales and optimize marketing budgets, got model performance of 92%.</li>
+								<li>Designed and executed A/B tests, performed rigorous statistical analysis. Led to 20% MoM increase in the conversion rate.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2018-2021</span>
+						<h2>Senior Data Analyst</h2>
+						<span class="position">iQuanti</span>
+						<p class="mt-4">iQuanti is a data-driven digital marketing analytics and solutions company, helps top 100 global brands. 
+							<ul>
+								<li>Performed in-depth market research and analysis to create online pages. Resulted in ~100% website growth and 30% increase in conversion rate YoY.</li>
+								<li>Delivered multiple training and mentorship sessions on analytical tools like SQL, MS Excel, Power BI, Tableau and Python.</li>
+								<li>Performed migration and enhancements for merchandising dashboard, involved data integration and its feature improvement.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>-->
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2022-2026</span>
+    					<h2>BSc. in Mechanical Engineering</h2>
+    					<span class="position">Chittagong University of Engineering and Technology</span>
+    					<p class="mt-4">CGPA: 3.83/4 (Class rank 4/181)</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2018-2020</span>
+    					<h2>Higher Secondary Certificate (HSC)</h2>
+    					<span class="position">Govt. Hazi Mohammad Mohsin College</span>
+    					<p class="mt-4">GPA: 5/5</p>
+    				</div>
+				</div>
+
+				<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2013-2018</span>
+    					<h2>Secondary School Certificate (SSC)</h2>
+    					<span class="position">Nasirabad Govt. High School</span>
+    					<p class="mt-4">GPA: 5/5</p>
+    				</div>
+				</div>
+    		</div>
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Research Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			
+				<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2026</span>
+    					<h4><a href="https://drive.google.com/file/d/1BN5togWF_GN2M5ArN4EJGkRj4wSTxJW9/view?usp=sharing">Effects of Green Synthesis Parameters on the Antimicrobial Efficacy of Metal Oxide Nanoparticles: A Mechanistic Review.</a>
+						</h4>
+    					<span class="position">M. M. Islam*, M. A. Noman*, M. N. Shaikh.</span>
+    					<p class="mt-4">*contributed equally  (under review)</p>
+    				</div>
+    			</div>
+
+				<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2026</span>
+    					<h4><a href="https://drive.google.com/file/d/1FX27nb02GDUc3iQ_QQbb1h-xb8KEyt9L/view?usp=sharing">UG Theis: CFD analysis of Bioinspired modeling of NACA 1412 airfoil mimicking Rüppell’s Vulture.</a>
+						</h4>
+    					<span class="position">Md Mominul Islam</span>
+    					<p class="mt-4">Supervised by: <a href="https://cuet.ac.bd/profile/faculty-member/syed-masrur-ahmmad">Mr. Syed Masrur Ahmmad, Associate Professor, Dept of ME, CUET</a> </p>
+    				</div>
+    			</div>
+
+
+    		</div>
+		<br>
+		<br>
+		
+		<div class="row">
+			<h1 class="big-4">Certification</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+
+				<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date"><a href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-TM3V4C86ZP">CSWPA-SM</a></span>
+    					<h3 class="heading"><a href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-TM3V4C86ZP">SOLIDWORKS Sheet Metal Professional</a></h3>
+    					<span class="position">Dassault Systèmes</span>
+    					<p class="mt-4">Certificate ID: C-TM3V4C86ZP</p>
+    				</div>
+    			</div>
+
+				<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date"><a href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-NBUHQ4JSC7">CSWPA-WD</a></span>
+    					<h3 class="heading"><a href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-NBUHQ4JSC7">SOLIDWORKS Weldments Professional</a></h3>
+    					<span class="position">Dassault Systèmes</span>
+    					<p class="mt-4">Certificate ID: C-NBUHQ4JSC7</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date"><a href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-67YLVUFTRA">CSWP</a></span>
+    					<h3 class="heading"><a href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-67YLVUFTRA">SolidWorks Professional - CAD Design</a></h3>
+    					<span class="position">Dassault Systèmes</span>
+    					<p class="mt-4">Certificate ID: C-67YLVUFTRA</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date"><a href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-24GTXJ5UR8">CSWA</a></span>
+    					<h3 class="heading"><a href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-24GTXJ5UR8">SolidWorks Associate - CAD Design</a></h3>
+    					<span class="position">Dassault Systèmes</span>
+    					<p class="mt-4">Certificate ID: C-24GTXJ5UR8</p>
+    				</div>
+				</div>
+    		</div>
+
+			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date"><a href="https://drive.google.com/file/d/1JTeQ6gSB67aFnAz1wIoOJ2wOuTPiQ5ff/view?usp=sharing">Math Competitions</a></span>
+    					<h3 class="heading"><a href="https://drive.google.com/file/d/1JTeQ6gSB67aFnAz1wIoOJ2wOuTPiQ5ff/view?usp=sharing">Certifications (Click to View)</a></h3>
+    					<span class="position"></span>
+    					<p class="mt-4">Includes: IYMC, NUMO, BDMO</p>
+    				</div>
+    			</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="https://drive.google.com/file/d/1cYRbM3eR5ZD38VNYzZnxbRdK-yIAnoa2/view?usp=sharing" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+    <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>Below are some sample projects developed by me</p>
+          </div>
+        </div>
+        
+		<div class="row">
+			<h1 class="big-4">Simulation Projects</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+
+		<div class="row d-flex">
+		  <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://drive.google.com/file/d/1xvW-lbFXQj19I7xItgZuNByIh3NB_oyZ/view?usp=sharing" class="block-20 zoom-effect" style="background-image: url('images/sim_proj_1.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading"><a href="">Forced Convection in Pin Fin Array</a></h3>
+                <p>A research paper's experimental results are checked through simulation. Pin Fin array is fixed in a plate which is being heated. Cold air is being passed through rectangular duct, in which the array is placed. Due to convection by the cold air and with the help of the fins, the plate is expected to release heat faster. Through the project, for different Re of the incoming air, the temperature change of the plate is observed and noted to compare with the experiment. </p>
+              </div>
+            </div>
+          </div>
+		  <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://drive.google.com/file/d/1xvW-lbFXQj19I7xItgZuNByIh3NB_oyZ/view?usp=sharing" class="block-20 zoom-effect" style="background-image: url('images/sim_proj_2.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading"><a href="">Wall Shear Stress due to Arterial Stenosis</a></h3>
+                <p>This study investigates the effect of arterial plaque morphology on blood flow behavior and wall shear stress (WSS) distribution using Computational Fluid Dynamics (CFD). Two stenosis geometries, semilunar and wavy irregular shapes, were modeled and analyzed to compare their influence on velocity variation, flow disturbances, recirculation zones, and local WSS patterns. The results provide insight into how plaque shape affects hemodynamic conditions and potential cardiovascular risk. </p>
+              </div>
+            </div>
+          </div>
+		</div>
+
+		<div class="row">
+			<h1 class="big-4">CAD Projects</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		<div class="row d-flex">
+		  <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://grabcad.com/library/electronics-enclosure-8" class="block-20 zoom-effect" style="background-image: url('images/proj_0.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://grabcad.com/library/fish-aquarium-feed-management-system-1">Electronics Enclosure</a></h3>
+                <p>Designed a 3D CAD model of an enclosure of a pcb board to keep the board safe while being used. Proper dimensioning of the box with the help of the printed board was crucial during the design. Finally the box is 3D printed and the pcb is fit inside the box properly.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://grabcad.com/library/fish-aquarium-feed-management-system-1" class="block-20 zoom-effect" style="background-image: url('images/proj_1.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://grabcad.com/library/fish-aquarium-feed-management-system-1">Fish Aquarium & Feed Management System</a></h3>
+                <p>Designed a 3D CAD model of a solar-powered mobile aquaculture cart as part of a university student's final year project. The cart integrates systems for fish production, water purification, automatic fish feed preparation, and a separate water supply for plant growth. </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://grabcad.com/library/remote-control-racing-car-1" class="block-20 zoom-effect" style="background-image: url('images/proj_2.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://grabcad.com/library/remote-control-racing-car-1">RC Car Design & 3D Print</a></h3>
+                <p>Designed and 3D printed a custom RC car body, optimized to overcome race track challenges with improved aerodynamics and durability.</p>
+              </div>
+            </div>
+          </div>
+		</div>
+
+		<!-- added justify-content-center to center align the last two projects -->
+		<div class="row d-flex justify-content-center">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://grabcad.com/library/worm-gearbox-11" class="block-20 zoom-effect" style="background-image: url('images/proj_3.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://grabcad.com/library/worm-gearbox-11">Worm Gearbox Design & 3D Print</a></h3>
+                <p>Designed and 3D printed a compact worm gearbox, engineered for high torque transmission and reduced speed, ideal for low-speed precision applications.</p>
+              </div>
+            </div>
+          </div>
+        
+		  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://grabcad.com/library/line-follower-car-3" class="block-20 zoom-effect" style="background-image: url('images/proj_4.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://grabcad.com/library/line-follower-car-3">Reverse-engineered LFR Sensor Shield Design</a></h3>
+				  <p>Designed a custom sensor shield for an LFR (Line Following Robot) car, based on an irregularly shaped PCB already in hand. The shield was reverse-engineered to fit precisely and protect the front sensor from ambient light interference, enhancing the sensor's accuracy and reliability.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://grabcad.com/library/reprap-recycle-bot-1" class="block-20 zoom-effect" style="background-image: url('images/proj_5.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://grabcad.com/library/reprap-recycle-bot-1">RepRap Recycle Autonomous Bot Design</a></h3>
+				  <p>Designed a RepRap Recycle Bot that converts waste plastic into 3D printer filament. The system includes a shredding unit, heating and extrusion mechanism, and a motorized spool collector—enabling closed-loop, low-cost, and sustainable filament production for desktop 3D printing.</p>
+				</div>
+			  </div>
+			</div>
+		</div>
+		<!-- added justify-content-center to center align the last two projects -->
+		<div class="row d-flex justify-content-center">
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+					<a href="https://grabcad.com/library/autocad-simple-floorplan-1" class="block-20 zoom-effect" style="background-image: url('images/proj_6.png');">
+					</a>
+					<div class="text mt-3 float-right d-block">
+				  		<h3 class="heading"><a href="https://grabcad.com/library/autocad-simple-floorplan-1">AutoCAD Floorplan</a></h3>
+				 		 <p>Created a detailed 2D floor plan in AutoCAD, showcasing efficient space planning and precise architectural detailing.</p>
+					</div>
+			  	</div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+					<a href="https://grabcad.com/library/autocad-simple-floorplan-1" class="block-20 zoom-effect" style="background-image: url('images/proj_7.png');">
+					</a>
+					<div class="text mt-3 float-right d-block">
+				  		<h3 class="heading"><a href="https://grabcad.com/library/autocad-simple-floorplan-1">3D Floorplan Rendering</a></h3>
+				 		 <p>Created a 3D floor plan using SketchUp and rendered with Enscape, highlighting realistic interior visualization, spatial layout, and lighting effects for architectural presentation.</p>
+					</div>
+			  	</div>
+			</div>
+		</div>
+	</div>
+    </section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.png)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> GrabCAD  </span> </h2>
+						<div class="heading"> <h4> I love to solve Design Problems &amp; provide expected solutions. </h4>
+						<br>
+						<p><a href="https://grabcad.com/md.mominul.islam-6" class="btn btn-primary py-3 px-5">GrabCAD</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Chittagong, Bangladesh</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://0101010101">+8801866027127</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:mominulislam27127@gmail.com">mominulislam27127@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="https://drive.google.com/file/d/1cYRbM3eR5ZD38VNYzZnxbRdK-yIAnoa2/view?usp=sharing" class="btn btn-primary py-3 px-4">Download Resume</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://api.whatsapp.com/send?phone=8801866027127" class="btn btn-primary py-3 px-5">Whatsapp me</a> </h2>
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <li class="ftco-animate"><a href="https://www.youtube.com/@visual_s_"><span class="icon-youtube"></span></a></li>
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/momin27/"><span class="icon-linkedin"></span></a></li> 
+					  <li class="ftco-animate"><a href="https://www.facebook.com/md.momin.27127"><span class="icon-facebook"></span></a></li>
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p>
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | MD MOMINUL ISLAM</a>
+	</p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
